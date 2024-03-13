@@ -1,0 +1,12 @@
+def eliminar_espacios(lista):
+    lista_sin_espacios = [elemento.replace(" ", "") for elemento in lista]
+    return lista_sin_espacios
+
+def main():
+    
+    elementos = input("Ingresa los elementos de la lista separados por comas: ").split(',')
+    elementos_sin_espacios = eliminar_espacios(elementos)
+    print("Lista con elementos sin espacios:", elementos_sin_espacios)
+
+if __name__ == "__main__":
+    main()
